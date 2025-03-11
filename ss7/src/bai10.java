@@ -25,10 +25,11 @@ public class bai10 {
                     System.out.println("Chuỗi sau khi đảo ngược: " + word);
                     break;
                 case 2: // Chèn chuỗi vào vị trí bất kỳ
-                    System.out.print("Nhập chuỗi cần chèn: ");
-                    String insertStr = sc.nextLine();
                     System.out.print("Nhập vị trí cần chèn: ");
                     int insertPos = sc.nextInt();
+                    sc.nextLine();  // Loại bỏ ký tự xuống dòng còn sót lại trong bộ đệm
+                    System.out.print("Nhập chuỗi cần chèn: ");
+                    String insertStr = sc.nextLine();
                     if (insertPos >= 0 && insertPos <= word.length()) {
                         //.insert(int offset, String str);
                         word.insert(insertPos, insertStr);
